@@ -14,14 +14,16 @@
   </head>
   <body>
     <header id="home">
-      <img
-        id="github-logo"
-        src="assets/images/gustavo-logo.svg"
-        alt="github logo"
-      />
+      <a href="#top">
+        <img
+          id="gustavo-logo"
+          src="assets/images/gustavo-logo.svg"
+          alt="gustavo logo"
+        />
+      </a>
       <nav>
         <ul class="nav-list">
-          <li><a href="#home">home</a></li>
+          <li><a href="#top">home</a></li>
           <li><a href="#sobre-mim">sobre mim</a></li>
           <li><a href="#skills">habilidades</a></li>
           <li><a href="#projects">projetos</a></li>
@@ -55,16 +57,14 @@
       </main>
       <div class="circle">
         <div id="circle-img">
-          <!-- <img src="assets/images/gustavo.JPEG" alt="foto do gustavo" /> -->
+          <img src="assets/images/gustavo-me.jpg" alt="foto do gustavo" />
         </div>
       </div>
     </section>
     <section id="sobre-mim">
-      <img
-        id="github-logo"
-        src="assets/images/about-me.svg"
-        alt="github logo"
-      />
+      <div id="sobremim-img">
+        <img src="assets/images/about-me.svg" alt="github logo" />
+      </div>
       <div class="about-me">
         <h3>Sobre mim</h3>
         <hr />
@@ -73,14 +73,38 @@
           ensino médio. <br />
           <br />
 
-          Sou formado como técnico em informática e atualmente estou cursando
-          Ciência da Computação. <br />
+          Sou formado como <span>técnico em informática</span> e atualmente
+          estou cursando <span>Ciência da Computação.</span> <br />
           <br />
 
           Sempre busco expandir meus conhecimentos na área da tecnologia,
           explorando novas ferramentas e tendências para me manter atualizado e
           aprimorar minhas habilidades.
         </p>
+      </div>
+    </section>
+    <section id="skills">
+      <div id="skills-main">
+        <h3>Habilidades</h3>
+        <!-- <hr /> -->
+        <div id="skills-logo">
+          <div id="html-skill">
+            <img src="assets/images/html-logo.svg" alt="html logo" />
+            <h4>HTML</h4>
+          </div>
+          <div id="css-skill">
+            <img src="assets/images/css-logo.svg" alt="css logo" />
+            <h4>CSS</h4>
+          </div>
+          <div id="js-skill">
+            <img src="assets/images/js-logo.svg" alt="javascript logo" />
+            <h4>JavaScript</h4>
+          </div>
+          <div id="react-skill">
+            <img src="assets/images/react-logo.svg" alt="react logo" />
+            <h4>React</h4>
+          </div>
+        </div>
       </div>
     </section>
   </body>

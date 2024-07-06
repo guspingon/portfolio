@@ -16,7 +16,18 @@
  body {
     position: relative;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
+    overflow-y: scroll;
+ }
+
+ body::-webkit-scrollbar {
+    background-color: var(--maingreen);
+    width: 10px;
+ }
+
+ body::-webkit-scrollbar-thumb {
+    background-color: var(--mainblue);
+    width: 10px;
  }
 
  #home {
@@ -49,7 +60,7 @@
 
  .nav-list li:hover {
     transform: scale(1.1);
-    transition: all 1s;
+    transition: all .5s;
  }
  
  .welcome-container {
@@ -104,12 +115,13 @@
     height: 50%;
     padding-bottom: 60px;
     gap: 10px;
-    cursor: pointer;
+    
 }
 
-.social-media #github-logo:hover, .social-media #linkedin-logo:hover {
+#github-logo:hover, #linkedin-logo:hover {
     transform: scale(1.1);
     transition: all .5s;
+    cursor: pointer;
 }
 
 /* .circle {
@@ -133,22 +145,86 @@
 }
 
 #circle-img {
-    background-image: url("./assets/images/gustavo.JPEG");
     padding-left: 30px;
     width: 100%;
 }
 
- #sobre-mim {
+#sobre-mim {
     display: flex;
     background-color: var(--lightgreen);
+    width: 100vw;
+    height: calc(100vh - 100px);
 }
 
-#sobre-mim img {
+#sobremim-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     padding: 100px
 }
 
+#sobremim-img img {
+    width: 70%;
+}
+
 .about-me {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
     width: 50%;
-    padding-top: 100px;
+    color: var(--mainblue);
  }
+
+ .about-me h3 {
+    font-size: 60px;
+    font-weight: 500;
+ }
+
+ .about-me hr {
+    border: 2px solid var(--mainblue);
+    border-radius: 10px;
+    width: 35%;
+ }
+
+ .about-me p {
+    width: 51%;
+    font-size: 20px;
+    padding-top: 40px;
+ }
+
+ .about-me span {
+    font-weight: bold;
+ }
+
+ #skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--maingreen);
+    color: var(--lightyellow);
+    width: 100vw;
+    height: calc(100vh - 100px);
+ }
+
+ #skills-main {
+    display: flex;
+    flex-direction: column;
+ }
+
+ #skills-main h3 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    padding-top: 30px;
+ }
+
+ #skills-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    margin-top: 200px;
+ }
+
